@@ -6,3 +6,6 @@ eureka:
     leaseRenewalIntervalInSeconds: 10   # DO NOT DO THIS IN PRODUCTION
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   leaseRenewalIntervalInSeconds: 5
+
+server:
+  port: 6969
