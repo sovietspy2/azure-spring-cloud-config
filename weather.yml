@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${CONNECTION}
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServerDialect
+      naming: 
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        orm:
+          jpa: DEBUG
+        transaction: DEBUG
